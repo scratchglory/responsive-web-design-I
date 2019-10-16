@@ -155,7 +155,7 @@ h5 {
 html,
 body {
   margin: 25px auto;
-  width: 876px;
+  width: 900px;
 }
 
 .navigation {
@@ -291,7 +291,6 @@ address p {
   /* NAVIGATION */
   .navigation {
     display: flex;
-    /* flex-wrap: nowrap; */
     justify-content: center;
   }
 
@@ -301,6 +300,7 @@ address p {
   }
 
   .navigation .nav a {
+    width: 100%;
     border-bottom: 2px solid gray;
     text-align: center;
     padding: 2% 0;
@@ -335,7 +335,6 @@ address p {
   }
 
   .border_two {
-    /* border-top: 2px solid black; */
     width: 100%;
     margin: 5% 0;
   }
