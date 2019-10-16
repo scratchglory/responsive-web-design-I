@@ -245,9 +245,14 @@ address p {
 
 /* 800px */
 @media (max-width: 800px) {
-  /* body {
-    width: 790px;
-  } */
+  html,
+  body {
+    width: 100%;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
 
   /* NAVIGATION */
   .navigation {
@@ -274,7 +279,12 @@ address p {
 
 /* 500px */
 @media (max-width: 500px) {
+  html,
   body {
+    width: 100%;
+  }
+
+  .middle-img {
     width: 100%;
   }
 
