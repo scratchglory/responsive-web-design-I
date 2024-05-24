@@ -1,0 +1,341 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+html,
+body {
+  margin: 25px auto;
+  width: 900px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  color: grey;
+  text-decoration: none;
+  margin-right: 50px;
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+
+.section1 {
+  margin: 40px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.section1 h1 {
+  font-size: 70px;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  padding: 5px 0px;
+  width: 200px;
+}
+
+.border_one {
+  border-top: 2px solid black;
+  width: auto;
+  margin: 75px 0px 25px 0px;
+}
+
+.section2 {
+  display: flex;
+}
+
+.middle-img {
+  margin: 25px 0px;
+}
+
+.section3 {
+  display: flex;
+}
+
+.section3 div {
+  margin: 0px 5px;
+}
+
+.border_two {
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 75px 0px 25px 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+address p {
+  margin: 20px 0px;
+}
+
+.copyright {
+  margin: 35px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* 800px */
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .navigation .logo {
+    margin: 0 0 4% 0;
+  }
+
+  .navigation .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* SECTION1 */
+  .section1 img {
+    display: none;
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation .nav a {
+    width: 100%;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    padding: 2% 0;
+  }
+
+  .navigation #services {
+    border-top: 2px solid gray;
+  }
+
+  .navigation .logo {
+    margin: 0 0 2% 0;
+  }
+
+  /* SECTION2 */
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2 div {
+    padding: 2% 0;
+  }
+
+  /* SECTION3 */
+  .section3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section3 div {
+    margin: 2% 0 0 0;
+  }
+
+  .border_two {
+    width: 100%;
+    margin: 5% 0;
+  }
+}

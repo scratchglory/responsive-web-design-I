@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/* ol,
+ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 25px auto;
+  width: 900px;
+}
+
+.services-header-img {
+  margin: 25px 0px;
+}
+
+.navigation {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .nav {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 68px;
+}
+
+.navigation .nav a {
+  margin-right: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+img .services-header-img {
+  margin: 25px 0px;
+}
+
+.section1 {
+  margin: 25px 0px;
+  width: 900px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.section1 div {
+  width: 48%;
+  border: 2px solid black;
+  background: lightgrey;
+  padding: 18px;
+  margin-bottom: 40px;
+}
+
+.web_dev,
+.android_dev,
+.ux_ui {
+  margin-left: auto;
+}
+
+.section1 .learn_more {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 14px;
+  margin: 15px 0px;
+  padding: 5px 0px;
+  width: 150px;
+}
+
+.section2 {
+  display: flex;
+}
+
+.section2 .some_facts {
+  margin: 0px 50px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 p {
+  margin: 25px 0px;
+}
+
+.border_one {
+  border-top: 2px solid black;
+  width: auto;
+  margin: 25px 0px;
+}
+
+.copyright {
+  margin: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* MEDIA QUERY 800px */
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    margin: 2px;
+  }
+
+  .services-header-img {
+    width: 100%;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .navigation .logo {
+    margin: 3% 0 0 0;
+  }
+
+  .navigation .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0 0 0;
+  }
+
+  /* SECTION1 */
+  .section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .web_dev,
+  .android_dev,
+  .ux_ui {
+    margin-left: 0;
+  }
+
+  /* SECTION2 */
+  .section2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .section2 .some_facts {
+    margin: 0px;
+  }
+
+  ul {
+    margin: 0 0 0 5%;
+  }
+
+  .services-info-img {
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
+
+  .section2 .services-info-img {
+    display: none;
+  }
+
+  /* NAVIGATION  */
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation .nav a {
+    width: 100%;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0px;
+  }
+
+  .navigation #home {
+    border-top: 2px solid gray;
+  }
+
+  .navigation .logo {
+    margin: 0 0 2% 0;
+  }
+
+  /* SECTION1 */
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1 div {
+    width: 100%;
+  }
+}
